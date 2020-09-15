@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  },
+  "name": "monorepo-setip",
+  "scripts": {
+    "test": "lerna run test --scope={@monorepo-setip/common,@monorepo-setip/server}",
+    "new-version": "lerna version --convectional-commits --yes"
+  }
+}
